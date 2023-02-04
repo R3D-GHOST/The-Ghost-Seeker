@@ -25,7 +25,8 @@ if [ $opt = 1 ]; then
 elif [ $opt = 2 ]; then
     cd PhoneInfoga/
     read -p "PhoneNumber :" Phone
-    phoneinfoga.py -n $Phone
+    cd phone
+    ./phoneinfoga scan -n $Phone
 elif [ $opt = 3 ]; then
     read -p "Coloca la IP :" ip_address
     echo "" 
